@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ChrisFit12 Lite</title>
+
+<meta name="theme-color" content="#121212">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#121212;
+color:#ffffff;
+padding-bottom:90px;
+}
+
+header{
+background:#1f1f1f;
+padding:25px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
+
+header h1{
+font-size:30px;
+color:#38bdf8;
+}
+
+header p{
+margin-top:8px;
+color:#cfcfcf;
+}
+
+.container{
+padding:18px;
+}
+
+.card{
+background:#1e1e1e;
+border-radius:18px;
+padding:18px;
+margin-bottom:18px;
+box-shadow:0 4px 12px rgba(0,0,0,.35);
+}
+
+.card h2{
+margin-bottom:12px;
+font-size:20px;
+color:#38bdf8;
+}
+
+.progress-ring{
+width:170px;
+height:170px;
+margin:20px auto;
+border-radius:50%;
+background:conic-gradient(
+#38bdf8 0deg,
+#38bdf8 110deg,
+#333 110deg,
+#333 360deg
+);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.progress-ring-inner{
+width:130px;
+height:130px;
+background:#121212;
+border-radius:50%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.progress-ring-inner h3{
+font-size:30px;
+}
+
+.progress-ring-inner span{
+font-size:14px;
+color:#bbbbbb;
+}
+
+.goal-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-top:18px;
+}
+
+.goal-box{
+background:#2a2a2a;
+padding:15px;
+border-radius:14px;
+text-align:center;
+}
+
+.goal-box h3{
+font-size:15px;
+margin-bottom:8px;
+color:#9ddcff;
+}
+
+.goal-box p{
+font-size:24px;
+font-weight:bold;
+}
+
+.progress-bar{
+width:100%;
+height:14px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+margin-top:12px;
+}
+
+.progress-fill{
+height:100%;
+width:25%;
+background:#38bdf8;
+}
+
+.workout-card{
+background:#263238;
+border-radius:16px;
+padding:18px;
+margin-top:16px;
+}
+
+.workout-title{
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.workout-info{
+color:#d5d5d5;
+line-height:1.6;
+}
+
+.stat-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+margin-top:18px;
+}
+
+.stat{
+background:#2a2a2a;
+padding:18px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat h3{
+font-size:15px;
+margin-bottom:10px;
+color:#9ddcff;
+}
+
+.stat p{
+font-size:28px;
+font-weight:bold;
+}
+
+button{
+margin-top:14px;
+width:100%;
+padding:14px;
+border:none;
+border-radius:12px;
+background:#38bdf8;
+color:white;
+font-size:16px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+opacity:.9;
+}
+
+.bottom-nav{
+position:fixed;
+left:0;
+right:0;
+bottom:0;
+height:70px;
+background:#1f1f1f;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -3px 10px rgba(0,0,0,.45);
+}
+
+.bottom-nav a{
+color:white;
+text-decoration:none;
+font-size:13px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.nav-icon{
+font-size:22px;
+margin-bottom:4px;
+}
+
+.section-title{
+margin-bottom:15px;
+font-size:22px;
+color:#38bdf8;
+}
+
+.small{
+font-size:13px;
+color:#bbbbbb;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>ChrisFit12 Lite</h1>
+
+<p>12 Week Weight Loss & Fitness Dashboard</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Your Goal</h2>
+
+<div class="progress-ring">
+
+<div class="progress-ring-inner">
+
+<h3>25%</h3>
+
+<span>Week 3 / 12</span>
+
+</div>
+
+</div>
+
+<div class="goal-grid">
+
+<div class="goal-box">
+
+<h3>Current</h3>
+
+<p>107kg</p>
+
+</div>
+
+<div class="goal-box">
+
+<h3>Target</h3>
+
+<p>96kg</p>
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill"></div>
+
+</div>
+
+<p class="small" style="margin-top:10px;">
+11kg total goal • Keep going!
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Today's Workout</h2>
+
+<div class="workout-card">
+
+<div class="workout-title">
+
+💪 Full Body Strength
+
+</div>
+
+<div class="workout-info">
+
+• Warm-up – 10 mins<br>
+• Strength – 35 mins<br>
+• Core – 10 mins<br>
+• Stretch – 10 mins
+
+</div>
+
+<button id="completeWorkout">
+
+Mark Workout Complete
+
+</button>
+
+</div>
+
+</div>
